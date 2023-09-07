@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>List Reimburse</ion-title>
+    <ion-button slot="end" color="danger" (click)="doLogout()"
+      >Logout</ion-button
+    >
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-searchbar (ionInput)="searchData($event)" [debounce]="500" placeholder="Seacrh by Name"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content>
+  <ion-list *ngFor="let item of reimburseData">
+    <ion-card>
+      <ion-card-header>
+        <div class="card-header-custom">
+          <ion-card-title>ID: {{ item.id }}</ion-card-title>
+
+          <ion-button
+            slot="end"
+            [color]="
+              item.status === 'Pending'
+                ? 'warning'
+                : item.status === 'Approved'
+                ? 'success'
+                : 'danger'
+            "
+            >{{item.status}}</ion-button
+          >
+        </div>
+        <ion-card-subtitle>{{ item.name }}</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+        {{ item.desc }}
+      </ion-card-content>
+
+      <ion-button (click)="goDetail(item)" fill="clear">Detail</ion-button>
+    </ion-card>
+  </ion-list>
+</ion-content>

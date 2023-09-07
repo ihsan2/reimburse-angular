@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Detail</ion-title>
+    <ion-buttons slot="start">
+      <ion-button (click)="goBack()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <ion-grid>
+      <ion-row class="ion-justify-content-between">
+        <ion-label>ID</ion-label>
+        <ion-label class="bold">{{ detail.id }}</ion-label>
+      </ion-row>
+      <ion-row class="ion-justify-content-between">
+        <ion-label>Name</ion-label>
+        <ion-label class="bold">{{ detail.name }}</ion-label>
+      </ion-row>
+      <ion-row class="ion-justify-content-between">
+        <ion-label>Claim Date</ion-label>
+        <ion-label class="bold">{{ detail.claim_date }}</ion-label>
+      </ion-row>
+      <ion-row class="ion-justify-content-between">
+        <ion-label>Phone</ion-label>
+        <ion-label class="bold">{{ detail.phone }}</ion-label>
+      </ion-row>
+      <ion-row class="ion-justify-content-between">
+        <ion-label>Category</ion-label>
+        <ion-label class="bold">{{ detail.category }}</ion-label>
+      </ion-row>
+      <ion-row class="ion-justify-content-between">
+        <ion-label>Description</ion-label>
+        <ion-label class="bold">{{ detail.desc }}</ion-label>
+      </ion-row>
+      <ion-row class="ion-justify-content-between">
+        <ion-label>Category</ion-label>
+        <ion-label class="bold">{{ detail.category }}</ion-label>
+      </ion-row>
+      <ion-row class="ion-justify-content-between">
+        <ion-label>Amount</ion-label>
+        <ion-label class="bold">{{ detail.amount }}</ion-label>
+      </ion-row>
+      <ion-row class="ion-justify-content-between">
+        <ion-label>Status</ion-label>
+        <ion-button
+          [color]="
+            detail.status === 'Pending'
+              ? 'warning'
+              : detail.status === 'Approved'
+              ? 'success'
+              : 'danger'
+          "
+          >{{ detail.status }}</ion-button
+        >
+      </ion-row>
+    </ion-grid>
+
+    <div [class]="detail.status === 'Pending' ? 'bottom' : 'bottom-hide'">
+      <ion-button (click)="doReject()" class="btn" size="full" color="danger">Reject</ion-button>
+      <ion-button (click)="doApprove()" class="btn" size="full" color="success">Approve</ion-button>
+    </div>
+  </div>
+</ion-content>

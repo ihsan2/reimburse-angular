@@ -1,0 +1,15 @@
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+.spinner-view {
+    position: absolute;
+    bottom: 20px;
+}
+.spinner {
+    width: 50px;
+    height: 50px;
+}

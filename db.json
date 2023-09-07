@@ -1,0 +1,84 @@
+{
+  "user": [
+    {
+      "id": "rijal",
+      "password": "123456"
+    },
+    {
+      "id": "dadang",
+      "password": "123456"
+    }
+  ],
+  "reimburse": [
+    {
+      "id": 1,
+      "phone": "082321233098",
+      "name": "Bambang Sumantri",
+      "claim_date": "29 August 2023",
+      "category": "Medical",
+      "amount": "Rp. 200.000",
+      "desc": "Reimburse Medical",
+      "status": "Pending"
+    },
+    {
+      "id": 2,
+      "phone": "082321233098",
+      "name": "Sofyan Muh",
+      "claim_date": "29 August 2023",
+      "category": "Optical",
+      "amount": "Rp. 200.000",
+      "desc": "Reimburse Optical",
+      "status": "Pending"
+    },
+    {
+      "id": 3,
+      "phone": "082321233098",
+      "name": "Reza Haramian",
+      "claim_date": "29 August 2023",
+      "category": "Medical",
+      "amount": "Rp. 200.000",
+      "desc": "Reimburse Medical",
+      "status": "Pending"
+    },
+    {
+      "id": 4,
+      "phone": "082321233098",
+      "name": "Maryam",
+      "claim_date": "29 August 2023",
+      "category": "Dental",
+      "amount": "Rp. 200.000",
+      "desc": "Reimburse Dental",
+      "status": "Pending"
+    },
+    {
+      "id": 5,
+      "phone": "082321233098",
+      "name": "Safitri Agus",
+      "claim_date": "29 August 2023",
+      "category": "Medical",
+      "amount": "Rp. 200.000",
+      "desc": "Reimburse Medical",
+      "status": "Pending"
+    },
+    {
+      "id": 6,
+      "phone": "082321233098",
+      "name": "Priskila Abigail",
+      "claim_date": "29 August 2023",
+      "category": "Dental",
+      "amount": "Rp. 200.000",
+      "desc": "Reimburse Dental",
+      "status": "Pending"
+    },
+    {
+      "id": 7,
+      "phone": "085321233098",
+      "name": "Hengky John",
+      "claim_date": "29 August 2023",
+      "category": "Transport",
+      "amount": "Rp. 200.000",
+      "desc": "Reimburse Transport",
+      "status": "Pending"
+    }
+  ]
+}

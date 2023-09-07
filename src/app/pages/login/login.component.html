@@ -1,0 +1,46 @@
+<ion-content>
+  <div class="container">
+    <div class="image-container">
+      <ion-img
+        class="image-logo"
+        src="assets/images/logo.png"
+        alt="App-Logo"
+      ></ion-img>
+    </div>
+    <div class="input-container">
+      <ion-text>
+        <h2>Login</h2>
+      </ion-text>
+
+      <form [formGroup]="loginform">
+        <ion-list lines="none">
+          <div>
+            <ion-label position="stacked">Username</ion-label>
+            <ion-item>
+              <ion-input
+                formControlName="username"
+                placeholder="Enter Username"
+              ></ion-input>
+            </ion-item>
+          </div>
+
+          <div>
+            <ion-label position="stacked">Password</ion-label>
+            <ion-item>
+              <ion-input
+                formControlName="password"
+                type="password"
+                placeholder="Enter Password"
+              ></ion-input>
+            </ion-item>
+          </div>
+        </ion-list>
+        <div class="button">
+          <ion-button (click)="proceedLogin()" color="success" expand="full" fill="solid">
+            Login
+          </ion-button>
+        </div>
+      </form>
+    </div>
+  </div>
+</ion-content>

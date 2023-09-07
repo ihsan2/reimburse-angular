@@ -1,0 +1,33 @@
+$padding-start: 50px;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 20;
+  height: 100%;
+}
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.image-logo {
+  width: 180px;
+  height: 180px;
+}
+.input-container {
+  padding: 20px;
+}
+ion-item {
+  --inner-padding-end: 0px;
+  --padding-end: 10px;
+  --padding-start: 10px;
+  border: 1px solid #73da8c;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: 8px;
+}
+ion-button {
+  height: 48px;
+}

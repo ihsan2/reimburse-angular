@@ -1,0 +1,32 @@
+$padding-start: 50px;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+ion-grid {
+  width: 100%;
+  padding: 20px;
+}
+ion-label {
+  font-size: 18px;
+}
+ion-row {
+  margin-bottom: 20px;
+}
+.bold {
+  font-weight: bold;
+}
+.bottom {
+  display: flex;
+  padding: 20px;
+}
+.bottom-hide {
+    display: none;
+    padding: 20px;
+  }
+.btn {
+  display: flex;
+  flex: 1;
+}
